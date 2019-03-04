@@ -3,8 +3,15 @@
 
 # #1: Create a method called num_list_with_arg that takes a positive integer and
 # returns a list of integers between 1 and the number passed in.
-#
+
 # So if the number 5 is passed in, num_list_with_arg should return [1, 2, 3, 4]
+
+def num_list_with_arg(arg):
+
+    array = []
+
+    while x < arg:
+        array.push(x) 
 
 
 # #2: Modify the has_ruby_exp method below so that it returns a SORTED list of
@@ -12,43 +19,47 @@
 # The list should contain only names of instructors.
 # make sure you name the list ruby_experience before returning it.
 
-def has_ruby_exp():
-    ruby_experience = []
+# def has_ruby_exp():
+#     ruby_experience = []
 
-    experience = {
-        'jimmy': {
-            'bjj': False,
-            'soccer': False,
-            'ruby': True,
-            'baking': True,
-            'biking': True,
-            'pasta': False
-        },
-        'don': {
-            'bjj': False,
-            'soccer': False,
-            'ruby': True,
-            'baking': True,
-            'biking': False,
-            'pasta': False
-        },
-        'zakk': {
-            'bjj': False,
-            'soccer': False,
-            'ruby': True,
-            'baking': False,
-            'biking': False,
-            'pasta': True
-        },
-        'hector': {
-            'bjj': True,
-            'soccer': True,
-            'ruby': False,
-            'baking': False,
-            'biking': True,
-            'pasta': False
-        }
-    }
+#     experience = {
+#         'jimmy': {
+#             'bjj': False,
+#             'soccer': False,
+#             'ruby': True,
+#             'baking': True,
+#             'biking': True,
+#             'pasta': False
+#         },
+#         'don': {
+#             'bjj': False,
+#             'soccer': False,
+#             'ruby': True,
+#             'baking': True,
+#             'biking': False,
+#             'pasta': False
+#         },
+#         'zakk': {
+#             'bjj': False,
+#             'soccer': False,
+#             'ruby': True,
+#             'baking': False,
+#             'biking': False,
+#             'pasta': True
+#         },
+#         'hector': {
+#             'bjj': True,
+#             'soccer': True,
+#             'ruby': False,
+#             'baking': False,
+#             'biking': True,
+#             'pasta': False
+#         }
+#     }
+
+#     for x in experience:
+#         if x['ruby'] == true:
+#             ruby_experience.append()
     
 
 
@@ -57,6 +68,14 @@ def has_ruby_exp():
 # argument is an integer, convert it to a string and return the string; If the
 # argument is neither a string nor an integer, return the string "this is not a
 # str or a int":
+
+def toggle_str_num(arg):
+    if arg.isInstance(str):
+        return int(arg)
+    elif arg.isInstance(int):
+        return str(arg)
+    else:
+        return "this is not a str or a int"
 
 
 # Commit when you finish working on these questions!

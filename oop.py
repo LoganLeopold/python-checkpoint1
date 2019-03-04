@@ -18,6 +18,30 @@
 # Your Vehicle class should take one argument (a `dict`) with the above
 # attributes. Define the properties on the class from the dict that is passed in.
 
+class Vehicle(dict):
+     
+    self.vehicle_type = dict[vehicle_type]
+    self.wheel_count = dict[wheel_count]
+    self.name = dict[name]
+    self.cost = dict[cost]
+    self.colors = dict[colors]
+    self.vehicle_brand = dict[vehicle_brand]
+    self.mpg = dict[mpg]
+
+
+  
+    def get_vehicle_type():
+        return self.vehicle_type
+
+    def get_vehicle_brand():
+        return self.vehicle_brand
+
+    def get_vehicle_drive():
+        if self.wheel_count == "no wheels!":
+            return "no wheels send it back to the shop"
+        else:
+            return "I have "  + "{0}".format(self.wheel_count)  + " wheel drive"
+        
 
 
 # #2: Create a Motorcycle class that inherits from the Vehicle class and has the
